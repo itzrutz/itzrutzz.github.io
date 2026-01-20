@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutuja Patil - Infrastructure Engineer</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #333; }
-        header { text-align: center; background: #f4f4f4; padding: 40px; }
-        h1 { margin: 0; color: #2c3e50; }
-        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        section { margin-bottom: 30px; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        .contact { font-weight: bold; }
-        @media (max-width: 768px) { body { padding: 10px; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rutuja Patil | Infrastructure & Urban Analytics</title>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Rutuja Patil</h1>
-        <p>Infrastructure Design and Management, IIT Kharagpur</p>
-        <p class="contact">rutujapatilrvsp@gmail.com | +91 9370319187</p>
-    </header>
 
-    <section id="education">
-        <h2>Academic Qualifications</h2>
-        <ul>
-            <li><strong>2025 MTech</strong> - IIT Kharagpur, CGPA 8.87/10</li>
-            <li><strong>2022 BE</strong> - Sant Gadge Baba Amravati University, CGPA 9.87/10</li>
-            <li><strong>2018 Class XII</strong> - Maharashtra State Board, 88.62%</li>
-            <li><strong>2016 Class X</strong> - Maharashtra State Board, 92.20%</li>
-        </ul>
-    </section>
+  <!-- HERO -->
+  <header data-aos="fade-down">
+    <h1>Rutuja Patil</h1>
+    <p>Infrastructure Design & Management | Urban Analytics</p>
+  </header>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Ramky Infrastructures Ltd. (Jun 2025 - Present)</strong> - Post Graduate Engineer Trainee<br>Planning and QS: Evaluated infra projects in smart utilities, water supply, waste management via RFP, PPP models, financial-technical analysis.</li>
-            <li><strong>KPMG India (May 2024 - Jul 2024)</strong> - Advisory Intern, GPS IIDA<br>Feasibility studies in tourism, logistics; proposed parking lot modifications, tourism layouts.</li>
-            <li><strong>SaveLIFE Foundation (Nov 2023 - Dec 2023)</strong> - Project Intern<br>Road safety implementation on NH 275, achieved 77% accident reduction.</li>
-        </ul>
-    </section>
+  <!-- ABOUT -->
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a postgraduate student at IIT Kharagpur with interests in
+        infrastructure planning, urban analytics, GIS, and data-driven
+        decision-making. I enjoy translating complex data into meaningful
+        insights for sustainable urban development.
+      </p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Masters Thesis (Jul 2024 - May 2025)</strong> - Spatial Analysis of Urban Growth using GIS, satellite imagery, real estate data for Mumbai.</li>
-            <li><strong>Infrastructure Finance PPP Modelling</strong> - Financing expressway projects, green infrastructure.</li>
-            <li><strong>Bachelors Thesis</strong> - Seismic Analysis of multi-storey building using STAADPro.</li>
-        </ul>
-    </section>
+  <!-- EXPERIENCE -->
+  <section>
+    <h2 data-aos="fade-up">Experience</h2>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Domain: Urban Development, Project Scheduling, Cost Estimation</li>
-            <li>Tools: QGIS, Google Earth Pro, RStudio, ArcGIS Pro, Python, MATLAB, SQL, AutoCAD</li>
-            <li>Others: Land Use Analysis, Spatial Data Modelling, Policy Analysis, Feasibility Studies</li>
-        </ul>
-    </section>
+    <div class="card" data-aos="fade-right">
+      <strong>Ramky Infrastructures Ltd</strong>
+      <p>Post Graduate Engineer Trainee</p>
+    </div>
 
-    <section id="leadership">
-        <h2>Positions of Responsibility</h2>
-        <ul>
-            <li>PG Coordinator - Technology Students Gymkhana, IIT Kharagpur (Budget: INR 20 lakhs)</li>
-            <li>Hall President - SAM Hall of Residence</li>
-            <li>Elected Senate Member, IIT KGP</li>
-        </ul>
-    </section>
+    <div class="card" data-aos="fade-left">
+      <strong>KPMG India</strong>
+      <p>Advisory Intern</p>
+    </div>
+  </section>
 
-    <section id="awards">
-        <h2>Conferences & Competitions</h2>
-        <ul>
-            <li>Selected for International Conference on Urban Affairs, Canada (Apr 2025)</li>
-            <li>Presented at 5th World Conference on Climate Change, Vienna (Mar 2025)</li>
-            <li>Finalist, EY Techathon 5.0</li>
-        </ul>
-    </section>
-</body>
-</html>
+  <!-- PROJECTS -->
+  <section data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+      <p>
+        Spatial Analysis of Urban Growth and Land Use Change using
+        GIS, satellite imagery, and real estate markers.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section data-aos="zoom-in">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: rutujapatilrvsp@gmail.com</p>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>© 2026 Rutuja Patil</p>
+  </footer>
+
+  <!-- AOS JS (MUST BE AT BOTTOM) -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: true
+    });
+  });
+</script>
