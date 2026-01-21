@@ -10,6 +10,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
+    .expand-front small {
+  display: inline-block;
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
     * {
       box-sizing: border-box;
     }
@@ -85,20 +91,29 @@
     }
 
     .expand-front {
-      padding: 25px;
-      cursor: pointer;
-    }
-
+  padding: 32px 36px;
+  cursor: pointer;
+  text-align: left;
+}
+    .expand-front {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+    .expand-front:active {
+  background: #eef2f7;
+}
     .expand-front:hover {
       background: #f3f4f6;
     }
 
-    .expand-back {
-      display: none;
-      padding: 25px;
-      border-top: 1px solid #e5e7eb;
-      background: #ffffff;
-    }
+   .expand-back {
+  display: none;
+  padding: 32px 36px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
 
     .expand-card input:checked + .expand-front + .expand-back {
       display: block;
