@@ -51,16 +51,86 @@
       text-align: center;
       padding: 20px;
     }
+    .hero {
+  background: url('background.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+    .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 260px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 25px;
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-size: 14px;
+}
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <header data-aos="fade-down">
+<!-- HERO -->
+<header class="hero" data-aos="fade-down">
+  <div class="hero-overlay">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
     <h1>Rutuja Patil</h1>
     <p>Infrastructure Design & Management | Urban Analytics</p>
-  </header>
+  </div>
+</header>
+
 
   <!-- ABOUT -->
   <section data-aos="fade-up">
@@ -68,7 +138,7 @@
     <div class="card">
       <p>
         I am a postgraduate student at IIT Kharagpur with interests in
-        infrastructure planning, urban analytics, GIS, and data-driven
+        infrastructure planning, urban analytics, GIS and data-driven
         decision-making. I enjoy translating complex data into meaningful
         insights for sustainable urban development.
       </p>
@@ -79,10 +149,42 @@
   <section>
     <h2 data-aos="fade-up">Experience</h2>
 
-    <div class="card" data-aos="fade-right">
-      <strong>Ramky Infrastructures Ltd</strong>
-      <p>Post Graduate Engineer Trainee</p>
+   <div class="flip-card" data-aos="fade-up">
+  <div class="flip-card-inner">
+
+    <!-- FRONT -->
+    <div class="flip-card-front">
+      <h3>Ramky Infrastructures Ltd</h3>
+      <p><strong>Post Graduate Engineer Trainee</strong></p>
+      <p>Planning & QS</p>
+      <p style="margin-top: 10px; font-size: 13px; color: #555;">
+        Hover / Click to know more →
+      </p>
     </div>
+
+    <!-- BACK -->
+    <div class="flip-card-back">
+      <h4>What I Worked On</h4>
+      <p>
+        Worked on evaluation and structuring of infrastructure projects
+        across smart utilities, urban water supply, and waste management.
+      </p>
+
+      <h4>Key Contributions</h4>
+      <ul>
+        <li>Analyzed RFP documents and PPP risk-sharing mechanisms</li>
+        <li>Reviewed HAM-based water supply projects</li>
+        <li>Assessed legacy waste remediation and resource recovery</li>
+      </ul>
+
+      <p style="margin-top: 10px;">
+        <strong>Skills:</strong> PPP, RFP Analysis, Infrastructure Feasibility
+      </p>
+    </div>
+
+  </div>
+</div>
+
 
     <div class="card" data-aos="fade-left">
       <strong>KPMG India</strong>
