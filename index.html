@@ -102,9 +102,14 @@
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card input {
+  display: none;
+}
+
+.flip-card input:checked + .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 
 .flip-card-front,
 .flip-card-back {
@@ -158,43 +163,47 @@
 
   <!-- EXPERIENCE -->
   <section>
-    <h2 data-aos="fade-up">Experience</h2>
-
    <div class="flip-card" data-aos="fade-up">
-  <div class="flip-card-inner">
+  <label style="display:block; height:100%;">
 
-    <!-- FRONT -->
-    <div class="flip-card-front">
-      <h3>Ramky Infrastructures Ltd</h3>
-      <p><strong>Post Graduate Engineer Trainee</strong></p>
-      <p>Planning & QS</p>
-      <p style="margin-top: 10px; font-size: 13px; color: #555;">
-        Hover / Click to know more →
-      </p>
+    <input type="checkbox">
+
+    <div class="flip-card-inner">
+
+      <!-- FRONT -->
+      <div class="flip-card-front">
+        <h3>Ramky Infrastructures Ltd</h3>
+        <p><strong>Post Graduate Engineer Trainee</strong></p>
+        <p>Planning & QS</p>
+        <p style="margin-top: 10px; font-size: 13px; color: #555;">
+          Click to know more →
+        </p>
+      </div>
+
+      <!-- BACK -->
+      <div class="flip-card-back">
+        <h4>What I Worked On</h4>
+        <p>
+          Worked on evaluation and structuring of infrastructure projects
+          across smart utilities, urban water supply, and waste management.
+        </p>
+
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Analyzed RFP documents and PPP risk-sharing mechanisms</li>
+          <li>Reviewed HAM-based water supply projects</li>
+          <li>Assessed legacy waste remediation and resource recovery</li>
+        </ul>
+
+        <p style="margin-top: 10px;">
+          <strong>Skills:</strong> PPP, RFP Analysis, Infrastructure Feasibility
+        </p>
+      </div>
+
     </div>
-
-    <!-- BACK -->
-    <div class="flip-card-back">
-      <h4>What I Worked On</h4>
-      <p>
-        Worked on evaluation and structuring of infrastructure projects
-        across smart utilities, urban water supply, and waste management.
-      </p>
-
-      <h4>Key Contributions</h4>
-      <ul>
-        <li>Analyzed RFP documents and PPP risk-sharing mechanisms</li>
-        <li>Reviewed HAM-based water supply projects</li>
-        <li>Assessed legacy waste remediation and resource recovery</li>
-      </ul>
-
-      <p style="margin-top: 10px;">
-        <strong>Skills:</strong> PPP, RFP Analysis, Infrastructure Feasibility
-      </p>
-    </div>
-
-  </div>
+  </label>
 </div>
+
 
 
     <div class="card" data-aos="fade-left">
