@@ -1,262 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Rutuja Patil | Infrastructure & Urban Analytics</title>
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    .expand-front small {
-  display: inline-block;
-  margin-top: 8px;
-  color: #6b7280;
-  font-size: 13px;
-}
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 80px 16px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    /* ================= HERO ================= */
-    .hero {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("background.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .hero-overlay {
-      background: rgba(0,0,0,0.55);
-      padding: 48px;
-      border-radius: 16px;
-      text-align: center;
-      color: #fff;
-      max-width: 600px;
-    }
-
-    .profile-pic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 24px;
-    }
-
-    /* ================= SIMPLE CARD ================= */
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-
-    /* ================= EXPANDABLE CARD ================= */
-    .expand-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      margin-bottom: 24px;
-      overflow: hidden;
-    }
-
-    .expand-card input {
-      display: none;
-    }
-
-    .expand-front {
-  padding: 32px 36px;
-  cursor: pointer;
-  text-align: left;
-}
-    .expand-front {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-    .expand-front:active {
-  background: #eef2f7;
-}
-    .expand-front:hover {
-      background: #f3f4f6;
-    }
-
-   .expand-back {
-  display: none;
-  padding: 32px 36px;
-  border-top: 1px solid #e5e7eb;
-  background: #ffffff;
-}
-
-
-    .expand-card input:checked + .expand-front + .expand-back {
-      display: block;
-    }
-
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Rutuja Patil | Infrastructure & Consulting</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- HERO -->
-<header class="hero" data-aos="fade-down">
-  <div class="hero-overlay">
-    <img src="profile.jpg" class="profile-pic" alt="Profile Photo">
-    <h1>Rutuja Patil</h1>
-    <p>Infrastructure Design & Management | Urban Analytics</p>
-  </div>
-</header>
+<nav>
+    <h2 class="logo">Rutuja Patil</h2>
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-<!-- ABOUT -->
-<section data-aos="fade-up">
-  <h2>About Me</h2>
-  <div class="card">
+<section class="hero">
+    <h1>Infrastructure | Consulting | Financial Analysis</h1>
     <p>
-
-      Hello, I’m a recent M.Tech graduate in Infrastructure Design and Management from IIT Kharagpur, with a strong academic foundation and internship experience in infrastructure and government advisory projects. My interests lie in project management, consultancy and financial analysis. I’ve developed key skills in urban development planning, bid documentation and data-driven decision-making. Eager to apply my knowledge across diverse infrastructure sectors. Happy to connect with you!!
-
-      
+        M.Tech in Infrastructure Design & Management, IIT Kharagpur.<br>
+        Interested in project management, consultancy, and data-driven decision-making.
     </p>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <h2 data-aos="fade-up">Experience</h2>
-
-  <!-- RAMKY -->
-  <div class="expand-card" data-aos="fade-up">
-    <input type="checkbox" id="exp1">
-    <label for="exp1" class="expand-front">
-      <h3>Ramky Infrastructures Ltd</h3>
-      <p><strong>Post Graduate Engineer Trainee</strong></p>
-      <p>Planning & QS</p>
-      <small>Click to expand ↓</small>
-    </label>
-    <div class="expand-back">
-      <p>Worked on evaluation and structuring of infrastructure projects.</p>
-      <ul>
-        <li>PPP & RFP analysis</li>
-        <li>HAM water supply projects</li>
-        <li>Legacy waste remediation</li>
-      </ul>
+    <div class="hero-buttons">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="contact.html" class="btn-secondary">Connect</a>
     </div>
-  </div>
-
-  <!-- KPMG -->
-  <div class="expand-card" data-aos="fade-up">
-    <input type="checkbox" id="exp2">
-    <label for="exp2" class="expand-front">
-      <h3>KPMG India</h3>
-      <p><strong>Advisory Intern</strong></p>
-      <p>Infrastructure Advisory</p>
-      <small>Click to expand ↓</small>
-    </label>
-    <div class="expand-back">
-      <ul>
-        <li>DPR & feasibility reviews</li>
-        <li>Cost estimation</li>
-        <li>Financial modelling</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-  <h2 data-aos="fade-up">Projects</h2>
-
-  <!-- PROJECT 1 -->
-  <div class="expand-card" data-aos="fade-up">
-    <input type="checkbox" id="proj1">
-    <label for="proj1" class="expand-front">
-      <h3>Spatial Analysis of Urban Growth</h3>
-      <p><strong>Master’s Thesis | IIT Kharagpur</strong></p>
-      <p>Urban Analytics & GIS</p>
-      <small>Click to expand ↓</small>
-    </label>
-    <div class="expand-back">
-      <ul>
-        <li>GIS-based spatial analysis</li>
-        <li>Land-use change mapping</li>
-        <li>Urban growth interpretation</li>
-      </ul>
-      <p><strong>Tools:</strong> QGIS, ArcGIS Pro, Google Earth Engine</p>
-    </div>
-  </div>
-
-  <!-- PROJECT 2 -->
-  <div class="expand-card" data-aos="fade-up">
-    <input type="checkbox" id="proj2">
-    <label for="proj2" class="expand-front">
-      <h3>Infrastructure Finance & PPP Modelling</h3>
-      <p><strong>Academic Project</strong></p>
-      <p>Public–Private Partnerships</p>
-      <small>Click to expand ↓</small>
-    </label>
-    <div class="expand-back">
-      <ul>
-        <li>Cash flow & revenue modelling</li>
-        <li>Risk allocation analysis</li>
-        <li>Financing structure comparison</li>
-      </ul>
-      <p><strong>Tools:</strong> MS Excel, Financial Modelling</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section data-aos="zoom-in">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: rutujapatilrvsp@gmail.com</p>
-  </div>
 </section>
 
 <footer>
-  <p>© 2026 Rutuja Patil</p>
+    <p>© 2026 Rutuja Patil</p>
 </footer>
-
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
 
 </body>
 </html>
