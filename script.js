@@ -1,3 +1,4 @@
+// Scroll spy for navigation
 const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -6,7 +7,6 @@ window.addEventListener("scroll", () => {
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
 
     if (scrollY >= sectionTop - 120) {
       current = section.getAttribute("id");
@@ -18,5 +18,16 @@ window.addEventListener("scroll", () => {
     if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
     }
+  });
+});
+
+// Experience accordion (expand / collapse cards)
+const experienceCards = document.querySelectorAll(".experience-card");
+
+experienceCards.forEach(card => {
+  const toggle = card.querySelector(".exp-toggle");
+
+  toggle.addEventListener("click", () => {
+    card.classList.toggle("active");
   });
 });
