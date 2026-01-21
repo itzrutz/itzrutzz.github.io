@@ -87,6 +87,15 @@ section {
 section:not(:last-child) {
   margin-bottom: 40px;
 }
+.project-group-title {
+  margin: 40px 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
 /* Footer */
 footer {
   text-align: center;
