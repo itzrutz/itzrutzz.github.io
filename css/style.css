@@ -540,3 +540,48 @@ footer {
   color: #0284c7;
 }
 
+/* ================= EXPANDABLE SKILLS ================= */
+
+.skills-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+
+.skills-toggle:hover h3 {
+  text-decoration: underline;
+  text-decoration-color: #38bdf8;
+  text-underline-offset: 4px;
+}
+
+/* Collapsible content */
+.skills-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  margin-top: 0;
+}
+
+/* Expanded state */
+.skills-bold-card.active .skills-content {
+  max-height: 300px;
+  margin-top: 14px;
+}
+
+/* Arrow indicator */
+.skills-bold-card::after {
+  content: "▾";
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  font-size: 14px;
+  color: #64748b;
+  transition: transform 0.3s ease;
+}
+
+.skills-bold-card.active::after {
+  transform: rotate(180deg);
+}
