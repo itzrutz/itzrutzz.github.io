@@ -205,6 +205,22 @@ footer {
   line-height: 1.6;
   color: #475569;
 }
+
+
+.duration-inline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin-left: 6px;
+}
+
+.exp-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+
 /* ================= PROJECT CARDS (MATCH EXPERIENCE) ================= */
 
 .project-card {
