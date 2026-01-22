@@ -315,6 +315,17 @@ footer {
   opacity: 0.85;
 }
 
+
+/* ================= Force left alignment for conference cards ================= */
+#conferences .experience-card,
+#conferences .exp-header,
+#conferences .exp-content {
+  text-align: left;
+}
+#conferences .exp-content p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
 /* ================= CONFERENCE TIMELINE ================= */
 
 .timeline {
