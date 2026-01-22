@@ -484,4 +484,59 @@ footer {
   color: #475569;
 }
 
+/* ================= BOLD SKILLS SECTION ================= */
+
+.skills-bold-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.skills-bold-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 14px;
+  padding: 26px 28px;
+  position: relative;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #38bdf8;
+}
+
+.skills-bold-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 8px 0 6px;
+}
+
+.skill-impact {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.skills-bold-card ul {
+  padding-left: 18px;
+}
+
+.skills-bold-card li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+/* Tag */
+.skill-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #0284c7;
+}
 
