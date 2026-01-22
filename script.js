@@ -41,14 +41,13 @@ projectCards.forEach(card => {
     card.classList.toggle("active");
   });
 });
-// Skills accordion (expand / collapse)
+// Skills accordion – full card clickable (like experience cards)
 const skillCards = document.querySelectorAll(".skills-bold-card");
 
 skillCards.forEach(card => {
-  const toggle = card.querySelector(".skills-toggle");
-
-  toggle.addEventListener("click", () => {
+  card.addEventListener("click", () => {
     card.classList.toggle("active");
   });
 });
+
 
